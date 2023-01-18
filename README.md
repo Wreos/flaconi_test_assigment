@@ -19,7 +19,7 @@ flutter doctor
 ```
 
 ## Launching tests
-Go to the test directory
+Go to the test directory integration_test
 
 * Run ALL the tests 
 
