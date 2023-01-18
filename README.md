@@ -9,37 +9,43 @@ Test task for Flaconi
 
 ## Pre-conditions
 
-Playwright requires [Node.js](https://nodejs.org/) v10+ for launching.
+Install flutter 
+https://docs.flutter.dev/get-started/install
 
-Install Playwright
+Check that everything is okay with flutter-doctor
 
 ```sh
-npm init playwright@latest
+flutter doctor
 ```
 
 ## Launching tests
 Go to the test directory
 
-* Run ALL the tests with generation HTML report
+* Run ALL the tests 
 
 ```sh
-npx playwright test --reporter=html  
+flutter test integration_test
 ```
 
-* Run only API tests
+* Run specific test
 
 ```sh
-npx playwright test
+flutter test integration_test/TEST_NAME.dart
 ```
 
-* Run only UI tests
-
-```sh
-npx playwright test
-```
+DEMO
+Android
 
 
-Result
-![img.png](img.png)
+https://user-images.githubusercontent.com/15965366/213170658-71112d3d-fc50-4b13-97a3-80ce579e60d7.mp4
 
-![img_1.png](img_1.png)
+
+
+iOS
+
+https://user-images.githubusercontent.com/15965366/213170631-939dc8fd-4952-4c32-a032-5befd03b9ddf.mp4
+
+
+# PS
+* I didn't use the page object, since the application is quite simple and the use of the pattern looks like an overhead
+* Also, to improve the stability of tests, it worth to think about adding mocks to tests, but as it is test-assigment, I limited myself not do it in scope of MVP
