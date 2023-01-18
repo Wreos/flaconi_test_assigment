@@ -20,6 +20,7 @@ void main() {
           expect(find.text(AppConst.kMaterialAppTitle), findsOneWidget);
           expect(find.byType(AppbarSearchButton), findsOneWidget);
           expect(find.byType(AppBar), findsOneWidget);
+          expect(find.text("No Albums added yet"), findsOneWidget);
         });
   });
 }

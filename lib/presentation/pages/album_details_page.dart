@@ -98,6 +98,7 @@ class _AlbumDetailsPageState extends State<AlbumDetailsPage> {
         CachedNetworkImage(
           imageUrl: album.albumImage ?? '',
           height: 300,
+          key: Key("albumDetailsImage"),
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
         ),

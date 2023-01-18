@@ -41,6 +41,7 @@ dependencies:
   intl: ^0.17.0
   pull_to_refresh: ^2.0.0
   hive: ^2.2.3
+  http: any
 
 dev_dependencies:
   integration_test:
@@ -62,6 +63,7 @@ dev_dependencies:
   mockito: any
   bloc_test: any
   mocktail: any
+  connectivity: any
   shared_preferences: any
   easy_localization: ^3.0.1
   favorite_button: ^0.0.4
